@@ -12,14 +12,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         this.binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root) //pegando a raiz do xml- contraintLayout da activity_main
+        setContentView(binding.root) //pegando a raiz do xml -contraintLayout da activity_main (tela)
     }
 
     override fun onStart() {
         super.onStart()
 
         this.binding.btnContador.setOnClickListener {
-            contador++ 
+            contador++
             this.binding.tvContador.text = "Contador $contador"
         }
 
