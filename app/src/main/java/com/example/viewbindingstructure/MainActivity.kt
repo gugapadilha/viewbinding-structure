@@ -6,7 +6,7 @@ import com.example.viewbindingstructure.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding //referência direta pro xml
     private var contador: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         this.binding.btnContador.setOnClickListener {
             contador++
-            this.binding.tvContador.text = "Contador $contador"
+            this.binding.tvContador.text = "Contador: $contador"
         }
 
     }

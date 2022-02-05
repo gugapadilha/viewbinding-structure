@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/gusta/Desktop/ViewBindingStructure/app/src/main/res/layout/activity_main.xml" value="0.128" />
+        <entry key="..\:/Users/gusta/Desktop/ViewBindingStructure/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/gusta/Desktop/ViewBindingStructure/app/src/main/res/layout/activity_recycler_view_view_example.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/gusta/Desktop/ViewBindingStructure/app/src/main/res/layout/res_item_live.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
