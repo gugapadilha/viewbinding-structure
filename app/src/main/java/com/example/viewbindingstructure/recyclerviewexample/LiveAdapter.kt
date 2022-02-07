@@ -1,22 +1,22 @@
-package com.example.viewbindingstructure
+package com.example.viewbindingstructure.recyclerviewexample
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.example.viewbindingstructure.models.Live
-import kotlinx.android.synthetic.main.res_item_live.view.*
+import com.example.viewbindingstructure.R
+import com.example.viewbindingstructure.databinding.ResItemLiveBinding
+import com.example.viewbindingstructure.recyclerviewexample.models.Live
 
-class LiveAdapter(private val onItemClicked : (Live) -> Unit) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class LiveAdapter(private val onItemClicked : (Live) -> Unit) :
+                  RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private var items : List<Live> = ArrayList()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
 
-        return LiveViewHolder( //definimos o layout do nosso viewHolder
-            LayoutInflater.from(parent.context).inflate(R.layout.res_item_live, parent, false)
-        )
+        val binding = ResItemLiveBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return LiveViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
@@ -37,19 +37,19 @@ class LiveAdapter(private val onItemClicked : (Live) -> Unit) : RecyclerView.Ada
         this.items = lives
     }
 
-    class LiveViewHolder constructor(
-        itemView : View //preciso passar essa implementaçao do ViewHolder nessa classe tbm.
-    ) : RecyclerView.ViewHolder(itemView){
+    inner class LiveViewHolder(
+        itemView: ResItemLiveBinding, //preciso passar essa implementaçao do ViewHolder nessa classe tbm.
+    ) : RecyclerView.ViewHolder(itemView.root ){
 
-        private val liveTitle = itemView.title
+        private val liveTitle = itemView.title //ta vindo do synthetics
         private val liveAuthor = itemView.author
         private val liveThumbnail = itemView.thumbnail
 
         //a funcao bind pega as informacoes da model que vou passar pra ele e coloca no layout do item do RecyclerView
         fun bind(live : Live, onItemClicked: (Live) -> Unit) {
 
-            liveTitle.text = live.title
-            liveAuthor.text = live.author
+            liveTitle.text = live.title //chamando pelo viewBinding
+            liveAuthor.text = live.author //chamando pelo viewBinding
 
             val requestOptions = RequestOptions()
                 .placeholder(R.drawable.ic_launcher_background)

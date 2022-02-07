@@ -1,4 +1,4 @@
-package com.example.viewbindingstructure
+package com.example.viewbindingstructure.recyclerviewexample
 
 import android.content.Intent
 import android.net.Uri
@@ -6,9 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.viewbindingstructure.databinding.ActivityRecyclerViewViewExampleBinding
-import kotlinx.android.synthetic.main.activity_recycler_view_view_example.*
 
-class RecyclerViewViewExampleActivity : AppCompatActivity() {
+class RecyclerViewViewBindingExampleActivity : AppCompatActivity() {
 
     private lateinit var liveAdapter : LiveAdapter
 
@@ -29,13 +28,12 @@ class RecyclerViewViewExampleActivity : AppCompatActivity() {
 
     private fun initRecyclerView() {
 
-        this.liveAdapter = LiveAdapter { live ->
+        this.liveAdapter = LiveAdapter{ live ->
             openLink(live.link)
-
         }
 
-        recyclerview.apply {
-            layoutManager = LinearLayoutManager(this@RecyclerViewViewExampleActivity)
+        this.binding.recyclerview.apply {
+            layoutManager = LinearLayoutManager(this@RecyclerViewViewBindingExampleActivity)
             adapter = liveAdapter
         }
 

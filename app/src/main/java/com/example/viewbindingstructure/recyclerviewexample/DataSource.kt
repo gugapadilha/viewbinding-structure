@@ -1,6 +1,6 @@
-package com.example.viewbindingstructure
+package com.example.viewbindingstructure.recyclerviewexample
 
-import com.example.viewbindingstructure.models.Live
+import com.example.viewbindingstructure.recyclerviewexample.models.Live
 
 class DataSource {
 
