@@ -12,6 +12,6 @@
   
    ### Imagens do projeto:
   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![tela1](https://user-images.githubusercontent.com/79876042/149163459-858d38f0-80db-4310-b7e3-b10408882ef4.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![tela1](https://user-images.githubusercontent.com/79876042/152991564-4e2d1e45-7fb3-4377-944f-ad33b8cba0a8.png)
   <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![tela2](https://user-images.githubusercontent.com/79876042/149163472-78ef169d-59fd-4f52-8090-27ec7f63b097.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
