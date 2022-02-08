@@ -23,8 +23,8 @@
 
             <ImageView
                 android:id="@+id/thumbnail"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="370dp"
+                android:layout_height="220dp"
                 android:layout_margin="0dp"
                 android:adjustViewBounds="true"
                 android:padding="0dp"
