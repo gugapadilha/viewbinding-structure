@@ -1,16 +1,16 @@
 <h1> Projeto: Top Series 2022 - Youtube <h1> 
   
-  > Status: Finalizado ✔️
+  > Status: Finished ✔️
   
-  ### Montando um RecyclerView utilizando ViewBinding para manipular os elementos do XML e redirecionar o usuário para o Youtube de acordo com a serie clicada.
+  ### Assembling a RecyclerView using ViewBinding to manipulate the XML elements and redirect the user to Youtube according to the clicked series.
   
   <br>
   
-  <strong>Tecnologias usadas: </strong>
+  <strong>Technologies used: </strong>
    + Kotlin
    + Android 
   
-   ### Imagens do projeto:
+   ### Mobile Project:
   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![tela1](https://user-images.githubusercontent.com/79876042/152991564-4e2d1e45-7fb3-4377-944f-ad33b8cba0a8.png)
   <br>
